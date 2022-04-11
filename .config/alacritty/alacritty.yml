@@ -1,0 +1,56 @@
+# Space Duck
+colors:
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#b3b3b3'
+  # Normal colors
+  normal:
+    black: '#000000'
+    red: '#cc5555'
+    green: '#55cc55'
+    yellow: '#cdcd55'
+    blue: '#5555cc'
+    magenta: '#cc55cc'
+    cyan: '#7acaca'
+    white: '#cccccc'
+
+  # Bright colors
+  bright:
+    black: '#555555'
+    red: '#ff5555'
+    green: '#55ff55'
+    yellow: '#ffff55'
+    blue: '#5555ff'
+    magenta: '#ff55ff'
+    cyan: '#55ffff'
+    white: '#ffffff'
+
+font:
+# Normal (roman) font face
+  normal:
+    # # Font family
+    family: UbuntuMono Nerd Font
+    style: Regular
+    # 
+    # # Bold font face
+  bold:
+    # # family Font
+    family: UbuntuMono Nerd Font
+    style: Bold
+    # 
+    # # Italic font face
+  italic:
+    # Font family
+    family: UbuntuMono Nerd Font
+    style: Italic
+    # 
+    # # Bold italic font face
+  bold_italic:
+    # Font family
+    family: UbuntuMono Nerd Font
+    # 
+    # #Point size
+  size: 10
+
+
