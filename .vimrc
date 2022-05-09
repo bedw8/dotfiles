@@ -37,6 +37,10 @@ nnoremap <leader>ez :vsp ~/.zshrc
 
 set shortmess+=c
 
+autocmd BufRead,BufNewFile   *.tex setlocal spell
+set spelllang=es,en
+inoremap <C-l> <c-g>u<Esc>[s1z=`]a<c-g>u
+
 
 """"""""""""""""""""""""""""""""""""""""""'
 """"""""""""""""""""""""""""""""""""""""""'
@@ -58,7 +62,8 @@ Plug 'mhinz/vim-startify'
 Plug 'justinmk/vim-sneak'
 
 Plug 'lervag/vimtex'
-
+Plug 'sirver/ultisnips'
+Plug 'KeitaNakamura/tex-conceal.vim'
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""'
@@ -80,5 +85,17 @@ nmap <leader>nn :NERDTreeToggle<CR>
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
 let g:vimtex_quickfix_mode=0
+
+
+
+autocmd BufRead,BufNewFile *.tex set conceallevel=1
+let g:tex_conceal='abdmg'
+
+
+let g:UltiSnipsExpandTrigger = '<tab>'
+let g:UltiSnipsJumpForwardTrigger = '<tab>'
+let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
+
+
 
 
